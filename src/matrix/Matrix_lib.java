@@ -65,6 +65,7 @@ public class Matrix_lib {
 		return cofactor;
 	}
 	
+	
 	public double [][] getInverse(double[][] a){
 		double answer[][]=new double[a.length][a[0].length];
 		double tmp[][]=new double[a.length-1][a[0].length-1];

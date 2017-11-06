@@ -4,6 +4,7 @@ import java.util.Arrays;
 
 public class Matrix_main {
 
+	
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		double a[][]= {{1,2},{-1,1}};

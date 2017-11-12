@@ -58,7 +58,7 @@ public class Matrix_lib {
 					p++;
 					q=0;
 				}
-				System.out.println("tmp["+i+"]="+Arrays.deepToString(tmp));
+				//System.out.println("tmp["+i+"]="+Arrays.deepToString(tmp));
 				cofactor+=a[i][index]*Math.pow(-1, (i+1)+(index+1))*this.getCofactor(tmp);
 			}
 		}
@@ -89,6 +89,15 @@ public class Matrix_lib {
 		}
 		answer=this.getTranspose(answer);
 		return answer;
+	}
+	
+	public double [] getSolution(double d[][],double e[]){
+		double answer[]=new double[d.length];
+		for(int i=0; i<d.length; i++) {
+			answer[i]=this.getInnerProduct(this.getInverse(d)[i], e);
+		}	
+		return answer;
+		
 	}
 
 }
